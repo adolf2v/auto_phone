@@ -1,0 +1,5 @@
+.idea/
+result
+report
+.pytest_cache
+__pycache__
