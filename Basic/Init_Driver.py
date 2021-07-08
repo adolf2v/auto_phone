@@ -10,9 +10,9 @@ def init_driver():
     ##设备号
     desired_caps['deviceName'] = '19021'
     ##包名
-    desired_caps['appPackage'] = 'com.android.contacts'
+    desired_caps['appPackage'] = 'com.ctrip.jr'
     ##启动名
-    desired_caps['appActivity'] = '.activities.PeopleActivity'
+    desired_caps['appActivity'] = 'com.mqunar.splash.SplashActivity'
 
     desired_caps['noReset'] = True
     ##允许输⼊中⽂
