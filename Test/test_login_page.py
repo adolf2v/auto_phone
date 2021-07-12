@@ -3,7 +3,7 @@ import unittest
 import pytest
 
 from Page.login_page import Login_Page
-from Basic.Init_Driver import init_driver
+from Basic.Init_Driver import init_driver, init_ios_driver
 import time
 import allure
 
@@ -11,13 +11,14 @@ import allure
 @allure.feature('测试登录功能')
 class TestLogin:
     def setup(self):
-        self.driver = init_driver()
+        self.driver = init_ios_driver()
         self.lp = Login_Page(self.driver)
 
     @allure.feature("test_login")
     def test_login(self):
         time.sleep(5)
         self.lp.click_apply_button()
+        print(self.driver.page_source)
         self.lp.click_agree_protocol()
         self.lp.input_mobile()
         time.sleep(1)
