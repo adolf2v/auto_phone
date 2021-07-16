@@ -22,3 +22,6 @@ class Base(object):
         self.fm = self.find_element(loc)
         self.fm.clear()
         self.fm.send_keys(text)
+
+    def get_text(self, loc="", value=""):
+        return self.find_element(loc).text

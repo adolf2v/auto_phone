@@ -6,7 +6,7 @@ def init_driver():
     desired_caps = {}
     ##	⼿机系统信息
     desired_caps['platformName'] = 'Android'
-    desired_caps['platformVersion'] = '11.0'
+    desired_caps['platformVersion'] = '7.1.1'
     ##设备号
     desired_caps['deviceName'] = '19021'
     ##包名
