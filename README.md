@@ -16,7 +16,7 @@ npm install -g appium
 npm install wd
 npm install -g ios-deploy
 gem install xcpretty  # optional
-appium
+appium-doctor 检查安装安装组件是否有问题
 ```
 
 ```angular2html
@@ -40,7 +40,8 @@ Product --> Test
 ```
 
 ```angular2html
-  "platformName": "ios",
+启动ios真机的参数
+"platformName": "ios",
 "platformVersion": "14.7",
 "udid": "00008030-000A108A3AA0802E",
 "deviceName": "iPhone 11 pro",
@@ -50,6 +51,7 @@ Product --> Test
 "xcodeSigningId": "iPhone Developer"
 ```
 ```angular2html
+可能的报错
 如果报错找不到xcode，执行如下操作，最后边是xcode的安装路径
 sudo xcode-select --switch /Applications/Xcode.app
 ```
